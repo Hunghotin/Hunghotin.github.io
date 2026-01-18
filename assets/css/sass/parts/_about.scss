@@ -1,67 +1,188 @@
 .small-wrapper {
-  width: 700px;
+  width: 800px;
   max-width: 90%;
   margin: 0 auto;
 }
 
-.about-container {
-  margin: 100px 0 100px;
-}
+/* ====================================
+   Centered About Page Styles
+   ==================================== */
 
-.about-header {
-  position: relative;
+.about-container-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 60px 20px;
   text-align: center;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    height: 1px;
-    width: 80px;
-    background-color: $dark-purple;
-  }
-  .author-image-container {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto 30px;
-  }
-  .subtitle {
-    color: $dark-purple;
-    font-weight: 300;
-    margin: 0;
-  }
 }
 
-.about-body {
-  .contact-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.profile-section {
+  max-width: 700px;
+  width: 100%;
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border: 4px solid $white;
+    background-color: $gray; 
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .bio-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: $dark-gray;
+    margin-bottom: 40px;
+    font-weight: 300;
     text-align: center;
-    li {
-      display: inline-block;
-      margin-left: 10px;
-      &:first-child {
-        margin-left: 0;
+    
+    p {
+        text-align: center;
+        margin-bottom: 1.2em;
+        &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: $white;
+      color: $dark-gray;
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      
+      i {
+          color: $dark-gray;
+          transition: color 0.3s ease;
       }
-      a {
-        display: block;
-        color: $light-gray;
-        font-size: 21px;
-        text-decoration: none;
-        padding: 5px;
-        transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-        &:hover {
-          color: $dark-pink;
-          transform: scale(1.3);
+      
+      &:hover {
+        background: $blue; 
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba($blue, 0.4);
+        
+        i {
+            color: $white;
         }
       }
     }
   }
 }
+
+/* ====================================
+   Resume Styles (Internships & Research)
+   ==================================== */
+
+.resume {
+  .resume-section {
+    margin-bottom: 50px;
+    
+    .section-title {
+       font-size: 1.8rem;
+       color: $dark;
+       border-bottom: 2px solid $primary;
+       padding-bottom: 10px;
+       margin-bottom: 25px;
+    }
+  }
+
+  .entry {
+    margin-bottom: 40px;
+    
+    /* Aesthetic Blue Title */
+    .entry-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #2980b9; /* Aesthetic Blue */
+      margin: 0 0 8px 0;
+    }
+    
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+    }
+    
+    .entry-location {
+        color: $light-gray;
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+
+    .entry-subheader {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 10px;
+       font-size: 1rem;
+       
+       .entry-date {
+           color: #7f8c8d;
+           font-style: italic;
+       }
+    }
+
+    .entry-details {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+      
+      li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+        color: $dark-gray;
+      }
+    }
+
+    .entry-topic {
+        margin-bottom: 10px; 
+        color: $dark-purple;
+    }
+  }
+  
+  .additional-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    .additional-item {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      h4 {
+        font-size: 1.1rem;
+        color: $dark-purple;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0;
+        color: $dark-gray;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+

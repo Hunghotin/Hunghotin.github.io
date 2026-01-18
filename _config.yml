@@ -9,17 +9,18 @@ baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
-author: Adam Neilson # add your name
-author-pic: adam-face.jpg
-about-author: My name is Adam Neilson. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 2 years.
+author: Haotian Huang # add your name
+author-pic: # adam-face.jpg
+about-author: 我是来自北京大学的黄浩天，主修地球化学与经济学。我对探索地球与市场的内在规律充满热情，并致力于在量化金融领域运用数据科学解决复杂问题。在代码和模型之外，我热爱篮球、滑雪和摄影，享受运动带来的挑战与生活中的美好瞬间。
 
 # Contact links
-email: # Add your Email address
-phone: # Add your Phone number
+email: haotianhuang142@gmail.com # Add your Email address
+phone: (86)131-7887-8206 # Add your Phone number
 website: # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-github: artemsheludko # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
+linkedin: haotian-huang447 # Add your Linkedin handle
+wechat: # Add your wechat username or QR code image name
+github: Hunghotin # Add your Github handle
+twitter: # Add your Twitter handle
 facebook: # Add your Facebook handle
 instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle

@@ -3,70 +3,41 @@ layout: home-page
 title: About
 permalink: /about/
 ---
-<div class="small-wrapper">
-  <div class="about-container">
-    <section class="about-header">
-      <div class="author-image-container">
-        <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{site.author}}">
-      </div>
-      <p class="subtitle">{{site.about-author}}</p>
-    </section>
-    <section class="about-body">
-      <ul class="contact-list">
+<div class="about-container-centered">
+  <div class="profile-section">
+    <div class="profile-image">
+      <!-- Upload your photo as avatar.png in assets/img/ folder -->
+      <img src="{{site.baseurl}}/assets/img/avatar.png" alt="{{site.author}}">
+    </div>
+    
+    <div class="bio-text">
+        <p>I am Haotian Huang from Peking University, with a double major in Geochemistry and Economics.</p>
+        <p>Passionate about exploring the underlying principles of the Earth and the market, I am dedicated to applying data science to solve complex problems in quantitative finance.</p>
+        <p>Beyond code and models, I am an enthusiast of basketball, skiing, and photography, enjoying both the challenges of sports and the beautiful moments of life.</p>
+    </div>
+
+    <div class="social-links">
       {% if site.email %}
-        <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i></a></li>
-      {% else %}
-        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      <a href="mailto:{{site.email}}" title="Email: {{site.email}}"><i class="fa fa-envelope-o"></i></a>
       {% endif %}
-
       {% if site.phone %}
-        <li class="phone"><a href="tel:{{site.phone}}"><i class="fa fa-phone"></i></a></li>
-      {% else %}
-        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+      <a href="tel:{{site.phone | remove: '(' | remove: ')' | remove: '-' | remove: ' '}}" title="Phone: {{site.phone}}"><i class="fa fa-phone"></i></a>
       {% endif %}
-
-      {% if site.website %}
-        <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i></a></li>
-      {% else %}
-        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-      {% endif %}
-
       {% if site.linkedin %}
-        <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      {% else %}
-        <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <a href="https://www.linkedin.com/in/{{site.linkedin}}" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
       {% endif %}
+      {% if site.wechat %}
+      <a href="#" title="WeChat"><i class="fa fa-weixin"></i></a>
+      {% endif %}
+    </div>
 
-      {% if site.github %}
-        <li class="github"><a href="http://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
-      {% else %}
-        <li class="github"><a href="http://github.com/artemsheludko" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <div class="contact-details" style="margin-top: 25px; color: #666; font-size: 0.95rem;">
+      {% if site.email %}
+      <div>{{ site.email }}</div>
       {% endif %}
-
-      {% if site.twitter %}
-        <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      {% else %}
-        <li class="twitter"><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      {% if site.phone %}
+      <div style="margin-top: 5px;">{{ site.phone }}</div>
       {% endif %}
-
-      {% if site.facebook %}
-        <li class="facebook"><a href="https://facebook.com/{{site.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-      {% else %}
-        <li class="facebook"><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      {% endif %}
-
-      {% if site.instagram %}
-        <li class="instagram"><a href="https://instagram.com/{{site.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
-      {% else %}
-        <li class="instagram"><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-      {% endif %}
-
-      {% if site.pinterest %}
-        <li class="pinterest"><a href="https://pinterest.com/{{site.pinterest}}" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-      {% else %}
-        <li class="pinterest"><a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-      {% endif %}
-      </ul>
-    </section> <!-- End About Body-->
-  </div> <!-- End About Container -->
-</div> <!-- End Small Wrapper -->
+    </div>
+  </div>
+</div>

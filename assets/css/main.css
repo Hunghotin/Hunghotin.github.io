@@ -1761,3 +1761,108 @@ pre code {
     margin: 0 0 15px;
   }
 }
+
+/* ==========================================================================
+   MANUAL FIX: Styles for About Page (Appended because Gulp is not running)
+   ========================================================================== */
+
+.about-container-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.profile-section {
+  max-width: 700px;
+  width: 100%;
+}
+
+.profile-section .profile-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 4px solid #fff;
+  background-color: #efefef; 
+}
+
+.profile-section .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-section .bio-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #3e3e40;
+  margin-bottom: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.profile-section .bio-text p {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.profile-section .bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+.profile-section .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-section .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff;
+  color: #3e3e40;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.profile-section .social-links a i {
+  color: #3e3e40;
+  transition: color 0.3s ease;
+}
+
+.profile-section .social-links a:hover {
+  background: #2d89ec; 
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(45, 137, 236, 0.4);
+}
+
+.profile-section .social-links a:hover i {
+  color: #fff;
+}
+
+.profile-section .contact-details {
+    margin-top: 25px;
+    color: #666; 
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.profile-section .contact-details div {
+    text-align: center;
+}
+
+/* Resume/Internship Blue Titles */
+.resume .entry .entry-title {
+  color: #2980b9;
+}
