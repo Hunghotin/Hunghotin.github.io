@@ -8,8 +8,8 @@ url: "https://Hunghotin.github.io" # the base hostname & protocol for your site,
 
 # Author settings
 author: Haotian Huang # add your name
-author-pic: # adam-face.jpg
-about-author: 我是来自北京大学的黄浩天，主修地球化学与经济学。我对探索地球与市场的内在规律充满热情，并致力于在量化金融领域运用数据科学解决复杂问题。在代码和模型之外，我热爱篮球、滑雪和摄影，享受运动带来的挑战与生活中的美好瞬间。
+author-pic: avatar.png # adam-face.jpg
+about-author: I am Haotian Huang from Peking University, with a double major in Geochemistry and Economics. Passionate about exploring the underlying principles of the Earth and the market, I am dedicated to applying data science to solve complex problems in quantitative finance. Beyond code and models, I am an enthusiast of basketball, skiing, and photography, enjoying both the challenges of sports and the beautiful moments of life.
 
 # Contact links
 email: haotianhuang142@gmail.com # Add your Email address
