@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Mastering LightGBM: Applications and Theory"
+title: "LightGBM"
 date: 2026-01-18 12:00:00 +0800
 description: A deep dive into LightGBM, exploring its advantages over XGBoost (GOSS, EFB, Leaf-wise growth), loss function design, and early stopping mechanisms.
-img: post-1.jpg
+img: mastering-lightgbm.jpg
 tags: [Machine Learning, LightGBM, Data Science]
 ---
 

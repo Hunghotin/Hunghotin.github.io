@@ -2,7 +2,7 @@
 layout: post
 title: "逐兽"
 date: 2025-04-01 12:00:00 +0800
-img: hou_yi.png
+img: chasing-beasts.png
 tags: [Literature, Story]
 ---
 

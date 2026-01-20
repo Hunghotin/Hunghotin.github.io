@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Shanghai Vlog"
+date: 2023-05-17 12:00:00 +0800
+img: shanghai_vlog_face.png
+tags: [Travel, Vlog, Shanghai]
+---
+
+<div class="video-container" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin-bottom: 20px;">
+  <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=953604262&bvid=BV1Vs4y1g7aX&cid=1128313536&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+### 这里的上海
+
+上海，这座拥有无限可能的魔都，完美融合了历史的厚重与现代的先锋感。
+
+站在**外滩**，万国建筑博览群诉说着百年的沧桑，对岸**陆家嘴**的摩天大楼——东方明珠、金茂大厦、上海中心，展示着这座城市直冲云霄的雄心与活力。
+
+**法租界**的梧桐树下，阳光斑驳，精致的咖啡馆与老洋房相映成趣；**豫园**江南园林的曲径通幽又让你恍若隔世。无论是弄堂里传来的吴侬软语，还是南京路上的熙熙攘攘，上海总有一种独特的魔力，让人沉醉其中，流连忘返。
+
+> *“海纳百川，追求卓越，开明睿智，大气谦和。”*
